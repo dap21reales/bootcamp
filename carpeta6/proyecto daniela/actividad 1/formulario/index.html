@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de contacto</title>
+</head>
+<body>
+	<h1>Inscripciones club de fans</h1>
+	<form action="mailto:realesdap@gmail.com" method="post" enctype="text/plain">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br>
+
+		<label for="ciudad">Ciudad:</label>
+		<select id="ciudad" name="ciudad">
+			<option value="Medellin">Medellin</option>
+			<option value="Bogota">Bogota</option>
+			<option value="Cartagena">Cartagena</option>
+		</select><br>
+
+		<label for="edad">Edad:</label>
+		<input type="number" id="edad" name="edad" required><br>
+
+		<label for="correo">Correo electrónico:</label>
+		<input type="email" id="correo" name="correo" required><br>
+
+		<label for="telefono">Número de contacto:</label>
+		<input type="tel" id="telefono" name="telefono" required><br>
+
+		<label for="integrante">Integrante favorito de Morat:</label>
+		<select id="integrante" name="integrante">
+			<option value="Juan Pablo Isaza">Juan Pablo Isaza</option>
+			<option value="Juan Pablo Villamil">Juan Pablo Villamil</option>
+			<option value="Martin Vargas">Martin Vargas</option>
+			<option value="Simon Vargas">Simon Vargas</option>
+		</select><br>
+
+		<input type="submit" value="Enviar">
+	</form>
+</body>
+</html>
+
