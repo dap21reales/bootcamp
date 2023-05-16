@@ -1,0 +1,49 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    size: 150%;
+    margin: 5px;
+  }
+  
+  header {
+    background-color: solid, black;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #999;
+  }
+  
+  main section {
+    margin: 30px;
+  }
+  
+  main h2 {
+    font-size: 24px;
+  }
+  
+  main h3 {
+    font-size: 20px;
+  }
+  
+  footer {
+    background-color: #fdf8f8;
+    padding: 50px;
+    text-align: center;
+  }
+  
