@@ -1,6 +1,6 @@
 body {
     font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
-    size: 150%;
+    font-size: 16px;
     margin: 30px;
     font-size: 18px;
     text-align: justify;
@@ -21,17 +21,38 @@ body {
     
     .logo img {
       display: inline-block;
-      width: 40%; 
+      width: 30%; 
     }
     
     nav {
       display: inline-block;
       margin-left: 5px; /* dar un margen a la derecha del logo */
-      
     }
-  
+    .menu {
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+      width: 150%;
+      height: 30px;
+      margin: 10px;
+      position: relative;
+      background-color:rgb(53, 2, 2);
+      z-index: 7;
+    }
+    a {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      position: relative;
+      font-size: 18px;
+      z-index: 9;
+    }
   nav ul {
-    list-style-type: armenian;
+    list-style-type: none;
     margin: 10px;
     padding: 10px;
   }
@@ -54,14 +75,19 @@ body {
     height: 100vh;
     width: 100%;    
 }
+.contenedor-imagen-actividades {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  
+}
 .imagen-actividad {
     height: 150px;
-    width: 200px;
+    width: 250px;
 }
-    .imagen-actividad img {
-      display: inline-block;
-      width: 20%; 
-  }
+.imagen-actividad.1 {
+  height: 150px;
+  width: 150px;
+}
   main h2 {
     font-size: 30px;
   }
@@ -76,4 +102,30 @@ body {
     text-align: center;
     letter-spacing: normal;
     color: black;
+    
+  }
+  form {
+    display: flex;
+    flex-wrap: wrap;
+    
+    & > input {
+      flex: 1 1 10ch;
+      margin: .5rem;
+      
+      &[type="email"] {
+        flex: 3 1 30ch;
+      }
+    }
+  }
+  input {
+    border: none;
+    background: hsl(0 0% 93%);
+    border-radius: .25rem;
+    padding: .75rem 1rem;
+    
+    &[type="submit"] {
+      background: hotpink;
+      color: white;
+      box-shadow: 0 .75rem .5rem -.5rem hsl(0 50% 80%);
+    }
   }
